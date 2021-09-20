@@ -1,35 +1,89 @@
-body{
-	background-color: dodgerblue;
-	font-family: Times, Helvetica, sans-serif;
+/*
+This block helps a lot with the calculations of the margins and overall positioning.
+Check it out: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+ */
+html {
+    box-sizing: border-box;
 }
-.loginBox{
-	width: 150%;
-	height: 50%;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
-.container{
-	position: fixed;
-	top: 35%;
-	left: 37.5%;
+
+body {
+    background-color: dodgerblue;
+    font-family: Times, Helvetica, sans-serif;
 }
-.input{
-	width: 30%;
-	margin-left: 33%;
-	margin-top: 5px;
+
+
+p {
+    font-family: Arial;
 }
-.notePicture{
-	position: relative;
-	height: 15%;
-	width: 15%;
+
+header, main {
+    text-align: center;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: white;
 }
-.loginButton{
-	position: relative;
-	background-color: darkblue;
-	color: white;
-	text-align: center;
-	top: 3px;
-	bottom: 8px;
+
+.search-bar {
+    height: 40px;
+}
+
+.search-field {
+    height: 100%;
+    justify-content: center;
+    width: 40%;
+}
+
+.search-button {
+    height: 100%;
+    width: 15%;
+    background-color: dodgerblue;
+    color: lightgray;
+}
+
+.post {
+    margin: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginBox {
+    width: 150%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container {
+    position: fixed;
+    top: 35%;
+    left: 37.5%;
+}
+
+.input {
+    width: 30%;
+    margin-left: 33%;
+    margin-top: 5px;
+}
+
+.notePicture {
+    position: relative;
+    height: 15%;
+    width: 15%;
+}
+
+.loginButton {
+    position: relative;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    top: 3px;
+    bottom: 8px;
 }
