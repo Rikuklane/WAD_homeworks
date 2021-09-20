@@ -1,3 +1,35 @@
 body{
 	background-color: dodgerblue;
+	font-family: Times, Helvetica, sans-serif;
+}
+.loginBox{
+	width: 150%;
+	height: 50%;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.container{
+	position: fixed;
+	top: 35%;
+	left: 37.5%;
+}
+.input{
+	width: 30%;
+	margin-left: 33%;
+	margin-top: 5px;
+}
+.notePicture{
+	position: relative;
+	height: 15%;
+	width: 15%;
+}
+.loginButton{
+	position: relative;
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	top: 3px;
+	bottom: 8px;
 }

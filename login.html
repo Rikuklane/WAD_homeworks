@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Import the css from resource folders css folder. Main.css is the main css style for all pages -->
     <link rel="stylesheet" type="text/css" href="res/css/main.css">
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
-	
+    <div class="container">
+        <form class="loginBox">
+            <img src="res/pictures/notes.jpg" alt="Notes" class="notePicture">
+            <p><b>Welcome to postIt!</b></p>
+
+            <a href='https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp' target="_blank">Create an account</a>
+            <p>Or <br> Please Log In</p>
+
+            <input type="text" placeholder="Email" class="input">
+
+            <input type="password" placeholder="Password" class="input">
+
+            <p ><button class ="loginButton">Log In</button></p>            
+
+            <a href='https://accounts.google.com/signin/v2/recoveryidentifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin' target="_blank">Forgot password?</a>
+        </form>
+    </div>
 </body>
 
 </html>
