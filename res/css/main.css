@@ -113,6 +113,9 @@ a:visited {
      Use a Child Selector (e.g., div > p)
      Use an Adjacent Sibling Selector (e.g., div + p)
      Use a General Sibling Selector (e.g., div ~ p)
-    - Index file post style (date, image, title text, like button, user icon)
+    - Index file post div style
+        - date and user icon and like icon positioning and styling
+        - image resize on page resize
+        - post caption styling
     - notes image to index file and make it able to be on same line as text
  */
