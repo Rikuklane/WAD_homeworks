@@ -3,7 +3,7 @@ This block helps a lot with the calculations of the margins and overall position
 Check it out: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
  */
 html {
-    box-sizing: border-box;
+    background-color: dodgerblue;
 }
 
 *, *:before, *:after {
@@ -11,26 +11,33 @@ html {
 }
 
 body {
-    background-color: dodgerblue;
     font-family: Times, Helvetica, sans-serif;
-}
-
-
-p {
-    font-family: Arial;
-}
-
-header, main {
+    box-sizing: border-box;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     max-width: 1090px;
     margin: 0 auto;
-    padding: 1em;
     background-color: white;
 }
 
-.search-bar {
-    height: 40px;
+header {
+    padding: 1em;
 }
+
+a {
+    color: royalblue;
+}
+
+a:active {
+    color: coral;
+}
+
+a:visited {
+    color: grey;
+}
+
+/* ------------------ Index page ---------------------- */
 
 .search-field {
     height: 100%;
@@ -45,6 +52,15 @@ header, main {
     color: lightgray;
 }
 
+.search-bar {
+    height: 30px;
+}
+
+.posts_container {
+    display: flex;
+    flex-direction: column;
+}
+
 .post {
     margin: 10%;
     padding-bottom: 5%;
@@ -52,25 +68,31 @@ header, main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* ------------------ Login page ---------------------- */
+
+.loginContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
 .loginBox {
-    width: 150%;
-    height: 50%;
     background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-.container {
-    position: fixed;
-    top: 35%;
-    left: 37.5%;
+    margin: auto;
+    padding: 1em 1em 2em 1em;
 }
 
 .input {
-    width: 30%;
-    margin-left: 33%;
-    margin-top: 5px;
+    width: 60%;
+    margin: 3px auto;
+    height: 30px;
+    padding: 1em;
 }
 
 .notePicture {
@@ -79,11 +101,18 @@ header, main {
     width: 15%;
 }
 
-.loginButton {
-    position: relative;
-    background-color: darkblue;
+#loginButton {
+    background-color: royalblue;
     color: white;
-    text-align: center;
-    top: 3px;
-    bottom: 8px;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
 }
+/* TODO
+     Use a Descendant Selector (e.g., div p)
+     Use a Child Selector (e.g., div > p)
+     Use an Adjacent Sibling Selector (e.g., div + p)
+     Use a General Sibling Selector (e.g., div ~ p)
+    - Index file post style (date, image, title text, like button, user icon)
+    - notes image to index file and make it able to be on same line as text
+ */
