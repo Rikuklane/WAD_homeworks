@@ -70,11 +70,9 @@ img {
 
 .search-field {
     height: 100%;
-    justify-content: center;
     width: 69%;
 }
 .search-button:hover{
-    background-color: #4c51c2;
     color: white;
 }
 
@@ -83,6 +81,7 @@ img {
     width: 30%;
     background-color: #4c51c2;
     color: lightgray;
+    max-width: 200px;
 }
 
 .posts-container {
@@ -121,14 +120,9 @@ img {
 
 .postFooter {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: left;
     padding: 10px 10px;
-}
-
-.postFooter p { /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".postFooter p", can change the inside */
-    margin: 0;
-    padding: 0;
 }
 
 .likeButton {
@@ -139,6 +133,11 @@ img {
 
 .likeButton > i {  /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".likeButton > i", can change the inside */
     color: #4c51c2;
+}
+
+.likeButton + p{
+    margin: 0;
+    padding: 0;
 }
 
 /* ------------------ Login page ---------------------- */
@@ -175,7 +174,7 @@ img {
     gap: 20px;
 }
 
-input {
+form input { /* IMPORTANT FOR HOMEWORK DON'T CHANGE "form input", can change the inside */
     width: 60%;
     margin: 3px auto;
     height: 30px;
@@ -194,7 +193,6 @@ input {
     color: white;
 }
 /* TODO
-     Use an Adjacent Sibling Selector (e.g., div + p)
      Use a General Sibling Selector (e.g., div ~ p)
     - post caption styling and positioning
  */
