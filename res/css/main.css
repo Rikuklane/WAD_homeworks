@@ -52,6 +52,10 @@ a:visited {
     height: 30px;
 }
 
+img {
+    width: 900px;
+}
+
 /* ------------------ Index page ---------------------- */
 
 .search-bar {
@@ -84,6 +88,16 @@ a:visited {
 .posts-container {
     display: flex;
     flex-direction: column;
+    padding: 50px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.post {
+    margin: 5%;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 900px;
 }
 
 .postHeader {
@@ -100,16 +114,31 @@ a:visited {
     font-size: small;
 }
 
-.post {
-    margin: 10%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .post_picture {
     max-width: 100%;
     max-height: 100%;
+}
+
+.postFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px 10px;
+}
+
+.postFooter p { /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".postFooter p", can change the inside */
+    margin: 0;
+    padding: 0;
+}
+
+.likeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.likeButton > i {  /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".likeButton > i", can change the inside */
+    color: #4c51c2;
 }
 
 /* ------------------ Login page ---------------------- */
@@ -165,11 +194,7 @@ input {
     color: white;
 }
 /* TODO
-     Use a Descendant Selector (e.g., div p)
-     Use a Child Selector (e.g., div > p)
      Use an Adjacent Sibling Selector (e.g., div + p)
      Use a General Sibling Selector (e.g., div ~ p)
-    - Index file post div style
-        - like icon positioning and styling
-        - post caption styling
+    - post caption styling and positioning
  */
