@@ -46,7 +46,23 @@ a:visited {
     color: grey;
 }
 
+.logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
 /* ------------------ Index page ---------------------- */
+
+.search-bar {
+    height: 30px;
+    min-width: 75%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 .search-field {
     height: 100%;
@@ -65,16 +81,23 @@ a:visited {
     color: lightgray;
 }
 
-.search-bar {
-    height: 30px;
-    min-width: 75%;
-    display: flex;
-    flex-direction: row;
-}
-
 .posts-container {
     display: flex;
     flex-direction: column;
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.postDate {
+    color: grey;
+    font-size: small;
 }
 
 .post {
@@ -91,6 +114,11 @@ a:visited {
 
 /* ------------------ Login page ---------------------- */
 
+#loginLogo {
+    width: 50px;
+    height: 50px;
+}
+
 .loginContainer {
     position: fixed;
     top: 50%;
@@ -98,6 +126,7 @@ a:visited {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: auto;
+    padding: 50px;
 }
 
 .loginBox {
@@ -107,20 +136,21 @@ a:visited {
     text-align: center;
     margin: auto;
     padding: 1em 1em 2em 1em;
+    min-width: 320px;
 }
 
-.input {
+#loginHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+input {
     width: 60%;
     margin: 3px auto;
     height: 30px;
     padding: 1em;
-}
-
-.notePicture {
-    position: relative;
-    height: 15%;
-    width: 15%;
-    max-width: 30px;
 }
 
 #loginButton {
@@ -140,7 +170,6 @@ a:visited {
      Use an Adjacent Sibling Selector (e.g., div + p)
      Use a General Sibling Selector (e.g., div ~ p)
     - Index file post div style
-        - date and user icon and like icon positioning and styling
+        - like icon positioning and styling
         - post caption styling
-    - notes image to index file and make it able to be on same line as text
  */
