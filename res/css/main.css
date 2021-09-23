@@ -8,7 +8,7 @@ Check it out: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 }
 
 body {
-    background-color: dodgerblue;
+    background-color: #4c51c2;;
     font-family: Times, Helvetica, sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ main {
 }
 
 a {
-    color: royalblue;
+    color: #4c51c2;
 }
 
 a:active {
@@ -51,14 +51,14 @@ a:visited {
     width: 40%;
 }
 .search-button:hover{
-    background-color: royalblue;
+    background-color: #4c51c2;
     color: white;
 }
 
 .search-button {
     height: 100%;
     width: 15%;
-    background-color: dodgerblue;
+    background-color: #4c51c2;
     color: lightgray;
 }
 
@@ -66,7 +66,7 @@ a:visited {
     height: 30px;
 }
 
-.posts_container {
+.posts-container {
     display: flex;
     flex-direction: column;
 }
@@ -117,14 +117,14 @@ a:visited {
 }
 
 #loginButton {
-    background-color: dodgerblue;
+    background-color: #4c51c2;
     color: lightgray;
     height: 30px;
     width: 60px;
     border-radius: 5px;
 }
 #loginButton:hover{
-    background-color: royalblue;
+    background-color: #4c51c2;
     color: white;
 }
 /* TODO
