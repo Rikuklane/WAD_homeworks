@@ -2,17 +2,15 @@
 This block helps a lot with the calculations of the margins and overall positioning.
 Check it out: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
  */
-html {
-    background-color: dodgerblue;
-}
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
+    background-color: dodgerblue;
     font-family: Times, Helvetica, sans-serif;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
     text-align: center;
     justify-content: center;
@@ -30,6 +28,7 @@ header {
 main {
     max-width: 1090px;
     background-color: white;
+    margin: 0 auto;
 }
 
 a {
