@@ -99,7 +99,7 @@ img {
     max-width: 900px;
 }
 
-.postHeader {
+.post-header {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -108,46 +108,52 @@ img {
     padding: 10px 10px;
 }
 
-.postDate {
+.post-date {
     color: grey;
     font-size: small;
 }
 
-.post_picture {
+.post-picture {
     max-width: 100%;
     max-height: 100%;
 }
 
-.postFooter {
+.post-footer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: left;
     padding: 10px 10px;
 }
 
-.likeButton {
+.like-button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
 
-.likeButton > i {  /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".likeButton > i", can change the inside */
+.like-button > i {  /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".likeButton > i", can change the inside */
     color: #4c51c2;
 }
 
-.likeButton + p{
-    margin: 0;
+.like-button + p {
+    margin-top: 2%;
     padding: 0;
+}
+
+div ~ p { /* Important for homework */
+    display: flex;
+    justify-content: left;
+    font-family: "Arial Rounded MT Bold";
 }
 
 /* ------------------ Login page ---------------------- */
 
-#loginLogo {
+#login-logo {
     width: 50px;
     height: 50px;
 }
 
-.loginContainer {
+.login-container {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -157,7 +163,7 @@ img {
     padding: 50px;
 }
 
-.loginBox {
+.login-box {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -167,7 +173,7 @@ img {
     min-width: 320px;
 }
 
-#loginHeader {
+#login-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -181,18 +187,15 @@ form input { /* IMPORTANT FOR HOMEWORK DON'T CHANGE "form input", can change the
     padding: 1em;
 }
 
-#loginButton {
+#login-button {
     background-color: #4c51c2;
     color: lightgray;
     height: 30px;
     width: 60px;
     border-radius: 5px;
 }
-#loginButton:hover{
+#login-button:hover{
     background-color: #4c51c2;
     color: white;
 }
-/* TODO
-     Use a General Sibling Selector (e.g., div ~ p)
-    - post caption styling and positioning
- */
+
