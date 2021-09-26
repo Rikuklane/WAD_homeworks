@@ -140,10 +140,10 @@ img {
     padding: 0;
 }
 
-div ~ p { /* Important for homework */
+div.like-button ~ p { /* Important for homework */
     display: flex;
     justify-content: left;
-    font-family: "Arial Rounded MT Bold";
+    font-family: "Century Gothic";
 }
 
 /* ------------------ Login page ---------------------- */
