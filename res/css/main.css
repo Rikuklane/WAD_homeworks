@@ -8,7 +8,7 @@ Check it out: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 }
 
 body {
-    background-color: #4c51c2;;
+    background-color: #4c51c2;
     font-family: Times, Helvetica, sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -131,16 +131,16 @@ img {
     justify-content: flex-start;
 }
 
-.like-button > i {  /* IMPORTANT FOR HOMEWORK DON'T CHANGE ".likeButton > i", can change the inside */
+.like-button > i {  /* Child Selector can change the inside */
     color: #4c51c2;
 }
 
-.like-button + p {
+.like-button + p { /* Adjacent Sibling Selector */
     margin-top: 2%;
     padding: 0;
 }
 
-div.like-button ~ p { /* Important for homework */
+div.like-button ~ p { /* General Sibling Selector */
     display: flex;
     justify-content: left;
     font-family: "Century Gothic";
@@ -180,7 +180,7 @@ div.like-button ~ p { /* Important for homework */
     gap: 20px;
 }
 
-form input { /* IMPORTANT FOR HOMEWORK DON'T CHANGE "form input", can change the inside */
+form input { /* Descendant Selector */
     width: 60%;
     margin: 3px auto;
     height: 30px;
