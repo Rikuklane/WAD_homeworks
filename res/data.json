@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "date": "31.12.2000 15:16",
+      "author" : "Juhan",
+      "image": "https://i.guim.co.uk/img/media/3aab8a0699616ac94346c05f667b40844e46322f/0_123_5616_3432/master/5616.jpg",
+      "text": "IT is not stressful at all. - Johan, 21",
+      "likes": 0
+    }
+  ]
+}
