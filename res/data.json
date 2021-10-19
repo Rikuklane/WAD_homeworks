@@ -2,10 +2,24 @@
   "posts": [
     {
       "date": "31.12.2000 15:16",
-      "author" : "Juhan",
+      "author" : "Johan",
       "image": "https://i.guim.co.uk/img/media/3aab8a0699616ac94346c05f667b40844e46322f/0_123_5616_3432/master/5616.jpg",
       "text": "IT is not stressful at all. - Johan, 21",
       "likes": 0
+    },
+    {
+      "date": "30.12.2000 13:29",
+      "author" : "James",
+      "image": "https://hungarytoday.hu/wp-content/uploads/2018/02/18ps27.jpg",
+      "text": "Yeah university is fine, im fine, it's nothing much really, I can handle it. - James, 25",
+      "likes": 7
+    },
+    {
+      "date": "01.12.1999 23:52",
+      "author" : "xxxMemes123",
+      "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
+      "text": "Man, I really do enjoy existing. - Buggy code",
+      "likes": 998322
     }
   ]
 }
