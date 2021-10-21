@@ -1,8 +1,8 @@
 //jQuery code that can retrieve/fetch the posts information from the endpoint
-// Endpoint: https://api.npoint.io/d8dcf3d01c64345481dd
+// Edit endpoint from: https://www.npoint.io/docs/d8dcf3d01c64345481dd
 $(document).ready(function() {
     $.get("https://api.npoint.io/d8dcf3d01c64345481dd", function(posts) {
-        for (post of posts) {
+        for (let post of posts) {
             console.log("post text: " + post.text)
             console.log("post image: " + post.image)
             console.log("post date: " + post.date)
@@ -13,8 +13,7 @@ $(document).ready(function() {
             let user_icon = $('<i class="fas fa-user-circle fa-2x"></i>');
             let post_date = $('<i class="post-date"></i>').text(post.date);
 
-            let post_picture = $('<img class="post-picture" alt="feed picture" src="">')
-            post_picture.src = post.image;
+            let post_picture = $('<img class="post-picture" alt="feed picture" src="">').attr("src", post.image)
 
             let post_footer_div = $('<div class= "post-footer">');
             let like_button_div = $('<div class= "like-button">');
@@ -33,7 +32,7 @@ $(document).ready(function() {
             post_div.append(post_picture)
             post_div.append(post_footer_div)
 
-            $('posts-container').append(post_div)
+            $('.posts-container').append(post_div)
         }
     })
 });
