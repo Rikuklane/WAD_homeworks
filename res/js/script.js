@@ -3,9 +3,7 @@
 $(document).ready(function() {
     $.get("https://api.npoint.io/d8dcf3d01c64345481dd", function(posts) {
         for (let post of posts) {
-            console.log("post text: " + post.text)
-            console.log("post image: " + post.image)
-            console.log("post date: " + post.date)
+            console.log(post)
 
             // creating objects
             let post_div = $('<div class= "post">');
