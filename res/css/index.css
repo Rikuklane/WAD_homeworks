@@ -15,7 +15,8 @@
     height: 100%;
     width: 69%;
 }
-.search-button:hover{
+
+.search-button:hover {
     color: white;
 }
 
@@ -26,6 +27,22 @@
     color: lightgray;
     max-width: 200px;
 }
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+}
+
+.dropdown-content p {
+    display: block;
+    margin-top: 10%;
+}
+
 
 .posts-container {
     display: flex;
@@ -74,7 +91,7 @@
     justify-content: flex-start;
 }
 
-.like-button > i {  /* Child Selector can change the inside */
+.like-button > i { /* Child Selector can change the inside */
     color: #4c51c2;
 }
 

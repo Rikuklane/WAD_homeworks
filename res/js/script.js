@@ -1,10 +1,22 @@
 //jQuery code that can retrieve/fetch the posts information from the endpoint
 // Edit endpoint from: https://www.npoint.io/docs/d8dcf3d01c64345481dd
+
+
 $(document).ready(function() {
-    $.get("https://api.npoint.io/d8dcf3d01c64345481dd", function(posts) {
+
+    let droplogo = document.getElementById('droplogo')
+    let content = document.querySelector('.dropdown-content')
+
+    droplogo.addEventListener('click', () => {
+        if (content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "";
+        }
+    })
+    $.getJSON("res/json/posts.json", function(posts) {
         for (let post of posts) {
             console.log(post)
-
             // creating objects
             let post_div = $('<div class= "post">');
             let post_header_div = $('<div class= "post-header">');

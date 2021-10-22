@@ -22,5 +22,69 @@
     "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
     "text": "Man, I really do enjoy existing. - Buggy code",
     "likes": 998322
+  },
+  {
+    "id": 4,
+    "date": "01.12.2005 10:00",
+    "author": "SquarePants",
+    "image": "https://i.kym-cdn.com/photos/images/facebook/001/226/569/509.jpg",
+    "text": "Yep..",
+    "likes": 100
+  },
+  {
+    "id": 5,
+    "date": "01.12.1999 23:52",
+    "author": "LoseThos",
+    "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/443/314/438.jpg",
+    "text": "Neat 16-color elephant",
+    "likes": 0
+  },
+  {
+    "id": 6,
+    "date": "01.12.2010 23:52",
+    "author": "Linus Torvalds",
+    "image": "https://www.linuxadictos.com/wp-content/uploads/linus-torvalds-fuck-you.jpg.webp",
+    "text": "What is this pull request, are you retarded?",
+    "likes": 998322
+  },
+  {
+    "id": 7,
+    "date": "01.12.1999 23:52",
+    "author": "TH",
+    "image": "https://media.newyorker.com/photos/5ba177da9eb2f7420aadeb98/master/pass/Cohen-Linus-Torvalds.jpg",
+    "text": "Toomas Hendrik Ilves",
+    "likes": 998322
+  },
+  {
+    "id": 8,
+    "date": "01.12.1999 23:52",
+    "author": "xxxMemes123",
+    "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
+    "text": "Man, I really do enjoy existing. - Buggy code",
+    "likes": 998322
+  },
+  {
+    "id": 9,
+    "date": "01.12.1999 23:52",
+    "author": "xxxMemes123",
+    "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
+    "text": "Man, I really do enjoy existing. - Buggy code",
+    "likes": 998322
+  },
+  {
+    "id": 10,
+    "date": "01.12.1999 23:52",
+    "author": "xxxMemes123",
+    "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
+    "text": "Man, I really do enjoy existing. - Buggy code",
+    "likes": 998322
+  },
+  {
+    "id": 3,
+    "date": "01.12.1999 23:52",
+    "author": "xxxMemes123",
+    "image": "https://ih1.redbubble.net/image.695347668.1283/throwpillow,small,1000x-bg,f8f8f8-c,0,200,1000,1000.jpg",
+    "text": "Man, I really do enjoy existing. - Buggy code",
+    "likes": 998322
   }
 ]
