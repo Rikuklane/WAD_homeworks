@@ -13,3 +13,5 @@ Repository for Web Application Development homeworks.
 ### Homework 2
 * https://courses.cs.ut.ee/LTAT.05.004/2021_fall/uploads/Main/Homework_2.pdf
 * Deadline: 24.okt
+* ![JSON validation proof](https://user-images.githubusercontent.com/73464092/138440260-fadf2e9b-8e55-4adb-bbe5-f6f2049328a0.png)
+
