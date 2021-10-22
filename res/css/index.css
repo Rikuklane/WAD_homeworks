@@ -28,19 +28,13 @@
     max-width: 200px;
 }
 
-.dropdown {
-    position: relative;
-
-}
 
 .dropdown-content {
+    background-color: white;
+    margin-left: 90%;
+    margin-top: 3%;
+    position: fixed;
     display: none;
-    position: relative;
-}
-
-.dropdown-content p {
-    display: block;
-    margin-top: 10%;
 }
 
 
