@@ -14,6 +14,7 @@ $(document).ready(function() {
             content.style.display = "";
         }
     })
+    // $.get("https://api.npoint.io/d8dcf3d01c64345481dd", function(posts) {
     $.getJSON("res/json/posts.json", function(posts) {
         for (let post of posts) {
             console.log(post)
@@ -22,7 +23,7 @@ $(document).ready(function() {
             let post_header_div = $('<div class= "post-header">');
             let user_icon = $('<i class="fas fa-user-circle fa-2x"></i>');
             let post_date = $('<i class="post-date"></i>').text(post.date);
-            if (post.image != "") {
+            if (post.image !== "") {
                 let post_picture = $('<img class="post-picture" alt="feed picture" src="">').attr("src", post.image)
                 post_div.append(post_picture)
             }
