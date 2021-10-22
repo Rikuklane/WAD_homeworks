@@ -22,8 +22,10 @@ $(document).ready(function() {
             let post_header_div = $('<div class= "post-header">');
             let user_icon = $('<i class="fas fa-user-circle fa-2x"></i>');
             let post_date = $('<i class="post-date"></i>').text(post.date);
-
-            let post_picture = $('<img class="post-picture" alt="feed picture" src="">').attr("src", post.image)
+            if (post.image != "") {
+                let post_picture = $('<img class="post-picture" alt="feed picture" src="">').attr("src", post.image)
+                post_div.append(post_picture)
+            }
 
             let post_footer_div = $('<div class= "post-footer">');
             let like_button_div = $('<div class= "like-button">');
@@ -39,7 +41,6 @@ $(document).ready(function() {
             post_header_div.append(post_date)
 
             post_div.append(post_header_div)
-            post_div.append(post_picture)
             post_div.append(post_footer_div)
 
             $('.posts-container').append(post_div)
