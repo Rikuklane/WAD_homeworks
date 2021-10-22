@@ -41,6 +41,7 @@
     display: none;
     text-align: left;
     text-indent: 5px;
+    font-family: cursive;
 }
 
 /* css for the containers of posts and their attributes*/
@@ -50,6 +51,7 @@
     padding: 50px 0;
     justify-content: center;
     align-items: center;
+    
 }
 
 .post {
@@ -57,6 +59,7 @@
     padding: 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 900px;
+    background-color: white;
 }
 
 .post-header {
