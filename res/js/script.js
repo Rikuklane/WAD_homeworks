@@ -14,8 +14,8 @@ $(document).ready(function() {
         }
     })
     //jQuery code that can retrieve/fetch the posts information from the endpoint
-    $.get("https://api.npoint.io/ca4f889b085ef8f24474", function(posts) {
-    //$.getJSON("res/json/posts.json", function(posts) {
+    // $.get("https://api.npoint.io/ca4f889b085ef8f24474", function(posts) {
+    $.getJSON("res/json/posts.json", function(posts) {
         for (let post of posts) {
             console.log(post)
             // creating objects
