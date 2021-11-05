@@ -1,6 +1,20 @@
-/* Importing main css to specific page css */
-@import "main.css";
+<template>
+<div>
+    <div class="search-bar">
+        <input type="text" class="search-field">
+        <button type="submit" class="search-button">Search</button>
+    </div>
+    <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
+    <div id="dropdownID" class="dropdown-content">
+        <p>Linus Torvalds</p>
+        <p>info@linuxfoundation.org</p>
+    </div>
+    <div class="posts-container"/></div>
+</template>
 
+
+
+<style>
 /* css for the top part of the index page*/
 .search-bar {
     height: 30px;
@@ -108,3 +122,4 @@ div.like-button ~ p { /* General Sibling Selector */
     justify-content: left;
     font-family: "Century Gothic", serif;
 }
+</style>
