@@ -3,11 +3,11 @@
     <div class="search-bar">
       <input type="text" class="search-field"/>
       <button type="submit" class="search-button">Search</button>
-    </div>
-    <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
-    <div id="dropdownID" class="dropdown-content">
-      <p>Linus Torvalds</p>
-      <p>info@linuxfoundation.org</p>
+      <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
+      <div id="dropdownID" class="dropdown-content">
+        <p>Linus Torvalds</p>
+        <p>info@linuxfoundation.org</p>
+      </div>
     </div>
     <div class="posts-container">
       <Post v-for="post in posts"

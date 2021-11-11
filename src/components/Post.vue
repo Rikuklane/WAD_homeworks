@@ -4,10 +4,11 @@
       <i class="fas fa-user-circle fa-2x"></i>
       <i class="post-date">{{ date }}</i>
     </div>
-    <img class="post-picture" alt="feed picture" src={{image}}>
+    <img class="post-picture" alt="now pic work? no? ok" src={{image}}>
     <div class="post-footer">
       <div class="like-button">
-        <i class="fas fa-thumbs-up fa-lg"></i>
+        <i class="fas fa-thumbs-up fa-lg" @click="increment"></i>
+        <p>{{ count }}</p>
       </div>
       <p>{{ text }}</p>
     </div>
@@ -17,16 +18,27 @@
 <script>
 export default {
   name: "Post",
-  props: ["date", "author", "image", "text", "likes"]
+  props: ["date", "author", "image", "text", "likes"],
+  data() {
+    return {
+      count: 0
+    }
+  },
+  methods: {
+    increment() {
+      this.count++;
+    }
+  }
 }
 </script>
 
 <style>
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 .post {
   margin: 2%;
   padding: 10px 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 900px;
+  max-width: 700px;
   background-color: white;
 }
 
@@ -79,4 +91,6 @@ div.like-button ~ p {
   justify-content: left;
   font-family: "Century Gothic", serif;
 }
+
+
 </style>
