@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="search-bar">
-      <input type="text" class="search-field" />
+      <input type="text" class="search-field"/>
       <button type="submit" class="search-button">Search</button>
     </div>
     <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
@@ -9,10 +9,30 @@
       <p>Linus Torvalds</p>
       <p>info@linuxfoundation.org</p>
     </div>
-    <div class="posts-container" />
+    <div class="posts-container">
+      <Post v-for="post in posts"
+            :key="post.id"
+            :date="post.date"
+            :text="post.text"
+            :image="post.image">
+      </Post>
+    </div>
   </div>
 </template>
+<script>
+import Post from "../components/Post";
 
+export default {
+  components: {Post},
+  computed: {
+    posts() {
+      return this.$store.state.posts
+    }
+
+  }
+}
+
+</script>
 <style>
 /* css for the top part of the index page*/
 .search-bar {
@@ -64,63 +84,5 @@
   padding: 50px 0;
   justify-content: center;
   align-items: center;
-}
-
-.post {
-  margin: 5%;
-  padding: 10px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 900px;
-  background-color: white;
-}
-
-.post-header {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px;
-}
-
-.post-date {
-  color: grey;
-  font-size: small;
-}
-
-.post-picture {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.post-footer {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: left;
-  padding: 10px 10px;
-}
-
-.like-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.like-button > i {
-  /* Child Selector can change the inside */
-  color: #4c51c2;
-}
-
-.like-button + p {
-  /* Adjacent Sibling Selector */
-  margin-top: 2%;
-  padding: 0;
-}
-
-div.like-button ~ p {
-  /* General Sibling Selector */
-  display: flex;
-  justify-content: left;
-  font-family: "Century Gothic", serif;
 }
 </style>
