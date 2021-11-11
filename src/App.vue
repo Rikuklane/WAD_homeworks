@@ -1,15 +1,17 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/contact">Contact</router-link>
-  </div>
-  <router-view />
-  <app-footer id="footer">
-    <router-link to="/contact">| Contact |</router-link>
-  </app-footer>
+<template id="app">
+  <Header> </Header>
+  <router-view> </router-view>
+  <Footer> </Footer>
 </template>
+<script>
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
+export default {
+  name: "App",
+  components: { Footer, Header },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -17,24 +19,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  height: 60px;
 }
 </style>
