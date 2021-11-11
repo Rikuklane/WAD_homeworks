@@ -16,14 +16,21 @@ export default {
 
 <style lang="scss">
 #nav {
-  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4c51c2;
+
+
   a {
     font-weight: bold;
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: beige;
     }
   }
 }
+
 </style>

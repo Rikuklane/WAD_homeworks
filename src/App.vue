@@ -1,6 +1,6 @@
 <template id="app">
-  <Header> </Header>
-  <router-view> </router-view>
+  <Header class="header"> </Header>
+  <router-view class="content"> </router-view>
   <Footer> </Footer>
 </template>
 <script>
@@ -19,5 +19,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.header + .content {
+  padding: 50px;
 }
 </style>
