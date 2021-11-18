@@ -1,6 +1,8 @@
 # WAD_homeworks
 Repository for Web Application Development homeworks.
 
+## Project info
+
 ### Team members
  - Richard Kuklane
  - Georg Šumailov
@@ -19,3 +21,22 @@ Repository for Web Application Development homeworks.
 * https://courses.cs.ut.ee/LTAT.05.004/2021_fall/uploads/Main/Homework_3.pdf
 * Deadline: 21.nov
 
+
+## Project setup
+```
+npm install
+```
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+### Compiles and minifies for production
+```
+npm run build
+```
+### Lints and fixes files
+```
+npm run lint
+```
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
