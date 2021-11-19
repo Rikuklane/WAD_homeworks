@@ -4,7 +4,7 @@
       <i class="fas fa-user-circle fa-2x"></i>
       <i class="post-date">{{ date }}</i>
     </div>
-    <img class="post-picture" alt="now pic work? no? ok" src={{image}}>
+    <img class="post-picture" alt="now pic work? no? ok" v-bind:src=image>
     <div class="post-footer">
       <div class="like-button">
         <i class="fas fa-thumbs-up fa-lg" @click="increment"></i>

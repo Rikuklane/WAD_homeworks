@@ -14,7 +14,7 @@
             :key="post.id"
             :date="post.date"
             :text="post.text"
-            :image="post.image">
+            :image = "post.image">
       </Post>
     </div>
   </div>
