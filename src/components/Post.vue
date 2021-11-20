@@ -16,83 +16,81 @@
 </template>
 
 <script>
-export default {
-  name: "Post",
-  props: ["date", "author", "image", "text", "likes"],
-  data() {
-    return {
-      count: 0
-    }
-  },
-  methods: {
-    increment() {
-      this.count++;
+  export default {
+    name: "Post",
+    props: ["date", "author", "image", "text", "likes"],
+    data() {
+      return {
+        count: 0
+      }
+    },
+    methods: {
+      increment() {
+        this.count++;
+      }
     }
   }
-}
 </script>
 
 <style>
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
-.post {
-  margin: 2%;
-  padding: 10px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: 700px;
-  background-color: white;
-  width: 100%;
-}
+  .post {
+    margin: 2%;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 700px;
+    background-color: white;
+    width: 100%;
+  }
 
-.post-header {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px;
-}
+  .post-header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
 
-.post-date {
-  color: grey;
-  font-size: small;
-}
+  .post-date {
+    color: grey;
+    font-size: small;
+  }
 
-.post-picture {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
+  .post-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 
-.post-footer {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: left;
-  padding: 10px 10px;
-}
+  .post-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: left;
+    padding: 10px 10px;
+  }
 
-.like-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+  .like-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
-.like-button > i {
-  /* Child Selector can change the inside */
-  color: #4c51c2;
-}
+  .like-button > i {
+    /* Child Selector can change the inside */
+    color: #4c51c2;
+  }
 
-.like-button + p {
-  /* Adjacent Sibling Selector */
-  margin-top: 2%;
-  padding: 0;
-}
+  .like-button + p {
+    /* Adjacent Sibling Selector */
+    margin-top: 2%;
+    padding: 0;
+  }
 
-div.like-button ~ p {
-  /* General Sibling Selector */
-  display: flex;
-  justify-content: left;
-  font-family: "Century Gothic", serif;
-}
-
-
+  div.like-button ~ p {
+    /* General Sibling Selector */
+    display: flex;
+    justify-content: left;
+    font-family: "Century Gothic", serif;
+  }
 </style>

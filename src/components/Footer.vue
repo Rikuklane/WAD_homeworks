@@ -1,14 +1,14 @@
 <template>
   <app-footer id="footer">
     <router-link to="/contact" class="contact-text"> Contact </router-link>
-    <div class="copyright">Copyright © Memes. All Rights Reserved</div>
+    <div class="copyright">Copyright © Boomers. All Memes Reserved</div>
   </app-footer>
 </template>
 
 <script>
-export default {
-  name: "Footer",
-};
+  export default {
+    name: "Footer",
+  };
 </script>
 <style lang="scss">
   #footer {

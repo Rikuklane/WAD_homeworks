@@ -1,46 +1,48 @@
 <template>
   <div class="contact">
-    <ul>
-      <h2>Phone numbers:</h2>
-      <li>
-        <p>Teammember 1: 6969 420</p>
-      </li>
-      <li>
-        <p>Teammember 2: 8008 666</p>
-      </li>
-      <li>
-        <p>Teammember 3: 5557 5744</p>
-      </li>
-    </ul>
-    <h2>Emails:</h2>
-    <ul>
-      <li>
-        <p>Teammember 1: veryprofessional@gmail.com</p>
-      </li>
-      <li>
-        <p>Teammember 2: atleastitsnotoffensive@gmail.com</p>
-      </li>
-      <li>
-        <p>Teammember 3: outofideas@gmail.com</p>
-      </li>
-    </ul>
-    <h2>Names:</h2>
-    <ul>
-      <li>
-        <p>Teammember 1: Punane Mazda</p>
-      </li>
-      <li>
-        <p>Teammember 2: Liiva Hunnik</p>
-      </li>
-      <li>
-        <p>Teammember 3: Red Table Lamp</p>
-      </li>
-    </ul>
+
+    <table>
+      <tr>
+        <th colspan="3">WebApplicationDevelopment Homework 3</th>
+      </tr>
+      <tr>
+        <th>Team member name</th>
+        <th>Phone number</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Punane Mazda</td>
+        <td>+372 5969 420</td>
+        <td>veryprofessional@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Liiva Hunnik</td>
+        <td>+372 5008 666</td>
+        <td>atleastitsnotoffensive@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Red Table Lamp</td>
+        <td>+372 5557 5744</td>
+        <td>outofideas@gmail.com</td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <style>
-ul {
-  list-style-type: none;
-}
+  table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 50px;
+    background-color: #A5A9FC;
+  }
+  table, th, td {
+    border: 4px solid black;
+    padding: 15px;
+  }
+
 </style>
