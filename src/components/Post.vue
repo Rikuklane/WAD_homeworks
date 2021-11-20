@@ -8,7 +8,7 @@
     <div class="post-footer">
       <div class="like-button">
         <i class="fas fa-thumbs-up fa-lg" @click="increment"></i>
-        <p>{{ count }}</p>
+        <p class="like-count">{{ count }}</p>
       </div>
       <p>{{ text }}</p>
     </div>

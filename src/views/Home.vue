@@ -2,7 +2,7 @@
   <div>
     <div class="search-bar">
       <input type="text" class="search-field"/>
-      <button type="submit" class="search-button">Search</button>
+      <button type="submit" class="button" id="search-button">Search</button>
       <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
       <div id="dropdownID" class="dropdown-content">
         <p>Linus Torvalds</p>
@@ -17,6 +17,7 @@
             :image = "post.image">
       </Post>
     </div>
+    <button @click.prevent="$refs.counter.reset" type="button" class="button" id="reset-button">Reset All Likes</button>
   </div>
 </template>
 <script>
@@ -52,23 +53,31 @@
   }
 
   /* css for the button "search", while hovering over it */
-  .search-button:hover {
+  .button:hover {
     color: white;
   }
 
   /* css for the button "search"*/
-  .search-button {
-    height: 100%;
-    width: 30%;
+  .button {
     background-color: #4c51c2;
     color: lightgray;
+  }
+
+  #search-button{
+    height: 100%;
+    width: 30%;
     max-width: 200px;
+  }
+
+  #reset-button {
+    height: 50px;
+    width: 200px;
   }
 
   /* css for the users dropdown menu */
   .dropdown-content {
     background-color: white;
-    right: 0px;
+    right: 0;
     top: 60px;
     position: fixed;
     display: none;
