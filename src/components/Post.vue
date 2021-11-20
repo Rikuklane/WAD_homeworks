@@ -4,7 +4,7 @@
       <i class="fas fa-user-circle fa-2x"></i>
       <i class="post-date">{{ date }}</i>
     </div>
-    <img class="post-picture" alt="now pic work? no? ok" v-bind:src=image>
+    <img v-if="image" class="post-picture" alt="no picture available" v-bind:src=image>
     <div class="post-footer">
       <div class="like-button">
         <i class="fas fa-thumbs-up fa-lg" @click="increment"></i>
@@ -40,6 +40,7 @@ export default {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 700px;
   background-color: white;
+  width: 100%;
 }
 
 .post-header {
@@ -57,8 +58,9 @@ export default {
 }
 
 .post-picture {
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .post-footer {

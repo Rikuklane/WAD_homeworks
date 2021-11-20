@@ -15,22 +15,22 @@ export default {
 </script>
 
 <style lang="scss">
-#nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #4c51c2;
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4c51c2;
+    opacity: 0.9;
+    padding: 10px;
 
+    a {
+      font-weight: bold;
+      color: #A5A5A5;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: beige;
+      &.router-link-exact-active {
+        color: beige;
+      }
     }
   }
-}
-
 </style>
