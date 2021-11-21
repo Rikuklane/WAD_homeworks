@@ -4,20 +4,19 @@
       <input type="text" class="search-field"/>
       <button type="submit" class="button" id="search-button">Search</button>
       <i id="droplogo" class="fas fa-user-circle fa-2x droplogo"></i>
-      <div id="dropdownID" class="dropdown-content">
-        <p>Linus Torvalds</p>
-        <p>info@linuxfoundation.org</p>
-      </div>
     </div>
     <div class="posts-container">
       <Post v-for="post in posts"
-            :key="post.id"
-            :date="post.date"
-            :text="post.text"
-            :image = "post.image">
+            :key = "post.key"
+            :post_id = "post.post_id"
+            :date = "post.date"
+            :author = "post.author"
+            :text = "post.text"
+            :image = "post.image"
+            :likes = "post.likes">
       </Post>
     </div>
-    <button @click.prevent="$refs.counter.reset" type="button" class="button" id="reset-button">Reset All Likes</button>
+    <button @click="toZero" class="button" id="reset-button">Reset All Likes</button>
   </div>
 </template>
 <script>
@@ -29,10 +28,17 @@
       posts() {
         return this.$store.state.posts
       }
-
-    }
+    },
+    methods: {
+      toZero(){
+        let i = 0;
+          while (i < (this.$store.state.posts).length ){
+            this.$store.state.posts[i].likes = 0
+            i+= 1
+          }
+        }
+      }
   }
-
 </script>
 <style>
   /* css for the top part of the index page*/

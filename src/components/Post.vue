@@ -7,8 +7,8 @@
     <img v-if="image" class="post-picture" alt="no picture available" v-bind:src=image>
     <div class="post-footer">
       <div class="like-button">
-        <i class="fas fa-thumbs-up fa-lg" @click="increment"></i>
-        <p class="like-count">{{ count }}</p>
+        <i class="fas fa-thumbs-up fa-lg" @click="increment({post_id})"></i>
+        <p class="like-count">{{ likes }}</p>
       </div>
       <p>{{ text }}</p>
     </div>
@@ -16,17 +16,20 @@
 </template>
 
 <script>
+
   export default {
     name: "Post",
-    props: ["date", "author", "image", "text", "likes"],
-    data() {
-      return {
-        count: 0
-      }
-    },
+    props: ["key","post_id","date","author", "image", "text", "likes"],
     methods: {
-      increment() {
-        this.count++;
+      increment(key_val) {
+        let i = 0;
+        let var_posts = this.$store.state.posts
+        while (i < var_posts.length ){
+          if (var_posts[i].post_id === key_val['post_id']){
+            var_posts[i].likes += 1
+          }
+          i+= 1
+        }
       }
     }
   }
