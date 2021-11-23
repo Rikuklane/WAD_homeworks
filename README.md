@@ -21,6 +21,9 @@ Repository for Web Application Development homeworks.
 * https://courses.cs.ut.ee/LTAT.05.004/2021_fall/uploads/Main/Homework_3.pdf
 * Deadline: 21.nov
 
+### Homework 4
+* https://courses.cs.ut.ee/LTAT.05.004/2021_fall/uploads/Main/Homework_4.pdf
+* Deadline: 11.dec
 
 ## Project setup
 ```
