@@ -1,0 +1,14 @@
+table {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 50px;
+    background-color: #A5A9FC;
+}
+table, th, td {
+    border: 4px solid black;
+    padding: 15px;
+}
