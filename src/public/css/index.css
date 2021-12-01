@@ -1,5 +1,4 @@
-
-    /* css for the top part of the index page*/
+/* css for the top part of the index page*/
 .search-bar {
     height: 30px;
     min-width: 75%;
@@ -27,7 +26,7 @@
     color: lightgray;
 }
 
-#search-button{
+#search-button {
     height: 100%;
     width: 30%;
     max-width: 200px;
