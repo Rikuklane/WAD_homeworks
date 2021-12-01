@@ -1,5 +1,7 @@
 const express = require('express');
+const pool = require('./database');
 const app = express();
+
 // register the ejs view engine
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '\\public'));
@@ -26,7 +28,18 @@ app.get('/contact', (req, res) => {
     res.sendFile('./views/contact.ejs', { root: __dirname });
     res.render('contact')
 });
-
+app.get('/posts/:id', async(req, res) => {
+    try {
+        console.log("get posts request has arrived");
+        const id = parseInt(req.params.id)
+        const posts = await pool.query(
+            "SELECT * FROM posts WHERE id = $1", [id]
+        );
+        res.json(posts.rows[0]);
+    } catch (err) {
+        console.error(err.message);
+    }
+});
 app.use((req, res) => {
     res.status(404).render('404');
 });
