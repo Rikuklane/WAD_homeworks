@@ -1,0 +1,21 @@
+#nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4c51c2;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    border: none;
+    color: lightgray;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+

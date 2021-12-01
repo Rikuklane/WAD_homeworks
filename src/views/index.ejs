@@ -14,9 +14,8 @@
     <title>Index</title>
 </head>
 <body>
-
+<%- include('partials/navbar.ejs') %>
 <header>
-    <img src="res/pictures/notes.jpg" alt="Notes" class="logo" id="headerLogo">
     <div class="search-bar">
         <input type="text" class="search-field">
         <button type="submit" class="search-button">Search</button>
@@ -28,7 +27,25 @@
     </div>
 </header>
 <main>
-    <div class="posts-container"></div>
+    <div class="posts-container">
+        <h2>All posts</h2>
+        <% if (posts.length > 0) { %>
+            <% posts.forEach(post => { %>
+                <a class="singlepost" href="/singlepost/<%= post.id %>">
+                    <h3 class="title">
+                        <%= post.title %>
+                    </h3>
+                    <p class="body">
+                        <%= post.body %>
+                    </p>
+                </a>
+            <% }) %>
+        <% } else { %>
+            <p>You did not post anything...</p>
+        <% } %>
+
+    </div>
+    <%- include('partials/footer.ejs') %>
 </main>
 </body>
 </html>

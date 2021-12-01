@@ -5,9 +5,18 @@
     <title>404</title>
 </head>
 <body>
+<style>
+    p {
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+    }
+</style>
+<%- include('partials/navbar.ejs') %>
 <h1>
-    <p>Unfortunately, in this vast world wide web the page you've requested does not exist. 404</p>
+    <p>Unfortunately, in this vast world wide web the page you've requested does not exist.</p>
+    <p>404</p>
 </h1>
-
+<%- include('partials/footer.ejs') %>
 </body>
 </html>
