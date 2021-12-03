@@ -25,6 +25,16 @@ Repository for Web Application Development homeworks.
 * https://courses.cs.ut.ee/LTAT.05.004/2021_fall/uploads/Main/Homework_4.pdf
 * Deadline: 11.dec
 
+## DB import
+* Open the pgAdmin tool
+* Right-click on Databases, then, Create -> Database (name it "wad" for example)
+* Copy ```dbexportwad.pgsql``` from project repository to your PostgreSQL bin folder (usually it is ```C:\Program Files\PostgreSQL\14\bin```)
+* Open CMD as an admin and navigate to your PostgreSQL bin folder
+* Type ```psql -U postgres wad < dbexportwad.pgsql```
+* Type in the password (the one specified during pgAdmin installation)
+* All done!
+
+
 ## Project setup
 ```
 npm install
