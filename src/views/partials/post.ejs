@@ -1,19 +1,28 @@
-
-<link rel="stylesheet" type="text/css" href="css/post.css">
+<link rel="stylesheet" type="text/css" href="../css/post.css">
 <div class="post">
     <div class="post-header">
         <i class="fas fa-user-circle fa-2x"></i>
         <i class="post-date"><%= post.date %></i>
     </div>
     <a class="singlepost" href="/singlepost/<%= post.id %>">
-    <img class="post-picture" alt="no picture available"src=<%= post.image%>>
+        <% if (post.image != "") { %>
+            <img class="post-picture" alt="no picture available" src=<%= post.image %>>
+        <% } else { %>
+            <p></p>
+        <% } %>
     </a>
     <div class="post-footer">
         <div class="like-button">
             <i class="fas fa-thumbs-up fa-lg" @click="increment({<%= post.likes %>})"></i>
             <p class="like-count"><%= post.likes %></p>
         </div>
-        <p><%= post.text %></p>
+        <% if (post.image == "") { %>
+        <a class="singlepost" href="/singlepost/<%= post.id %>">
+            <p><%= post.body %></p>
+        </a>
+        <% } else { %>
+            <p><%= post.body %></p>
+        <% } %>
     </div>
 </div>
 <script>

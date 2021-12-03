@@ -1,0 +1,21 @@
+.singlepost {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    background-color: indianred;
+    border: none;
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 32px;
+    cursor: pointer;
+
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}

@@ -25,6 +25,7 @@ app.get('/', async (req, res) => {
         res.render('index', {posts: posts.rows});
     } catch (err) {
         console.error(err.message);
+        res.render('index', {posts: ""});
     }
 });
 
@@ -90,8 +91,9 @@ app.post('/posts', async (req, res) => {
         console.error(err.message)
     }
 });
-app.get('/createpost.ejs', (req, res) => {
-    res.render('create');
+app.get('/addnewpost', (req, res) => {
+    res.sendFile('./views/addnewpost.ejs', { root: __dirname });
+    res.render('addnewpost');
 });
 app.use((req, res) => {
     res.status(404).render('404');
