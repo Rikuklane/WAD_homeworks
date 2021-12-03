@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+<%- include('partials/navbar.ejs') %>
+<div class="singlepost">
+    <%- include('partials/post.ejs', {post: posts}) %>
+    <a class="delete" data-del="<%= posts.id %>">Delete</a>
+</div>
+<%- include('partials/footer.ejs') %>
+
+</body>
+</html>

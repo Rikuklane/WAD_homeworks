@@ -1,6 +1,6 @@
 /* css for the top part of the index page*/
 header {
-    margin: 60px;
+    margin-top: 60px;
 }
 
 button[type=submit] {
