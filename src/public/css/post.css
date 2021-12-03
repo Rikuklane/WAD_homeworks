@@ -58,3 +58,8 @@ div.like-button ~ p {
     justify-content: left;
     font-family: "Century Gothic", serif;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
