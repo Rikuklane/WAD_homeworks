@@ -7,15 +7,26 @@
 <h1>Create magnificence</h1>
 <div class="create-post">
     <form action="/posts" method="POST">
-        <label for="title">Post title:</label>
-        <input type="text" id="title" name="title" required><br><br>
+        <label for="author">Post author:</label>
+        <input type="text" id="author" name="author" required><br><br>
+
         <label for="body">Post body:</label>
         <input type="text" id="body" name="body" required><br><br>
-        <label for="urllink"> URL link:</label>
-        <input type="text" id="urllink" name="urllink"></textarea><br><br>
-        <button>Submit</button>
+
+        <label for="image"> URL link:</label>
+        <input type="text" id="image" name="image"></textarea><br><br>
+        <button type="submit">Submit</button>
     </form>
 </div>
 <%- include('partials/footer.ejs') %>
+<script>
+    const postreq = document.querySelector('a.post');
+    delreq.addEventListener('click', (e) => {
+        const endpoint = `/posts/${postreq.dataset.post}`;
+        fetch(endpoint, {
+            method: 'POST',
+        }).then(window.location.href = '/')
+    });
+</script>
 </body>
 </html>
