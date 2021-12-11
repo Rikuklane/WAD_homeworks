@@ -5,18 +5,18 @@
         <i class="post-date"><%= post.date %></i>
     </div>
     <a class="singlepost" href="/singlepost/<%= post.id %>">
-        <% if (post.image != "") { %>
+        <% if (post.image !== "") { %>
             <img class="post-picture" alt="no picture available" src=<%= post.image %>>
         <% } else { %>
             <p></p>
         <% } %>
     </a>
     <div class="post-footer">
-        <div class="like-button">
+        <div class="like-button" @click="increment({<%= post.likes %>})">
             <i class="fas fa-thumbs-up fa-lg" @click="increment({<%= post.likes %>})"></i>
             <p class="like-count"><%= post.likes %></p>
         </div>
-        <% if (post.image == "") { %>
+        <% if (post.image === "") { %>
         <a class="singlepost" href="/singlepost/<%= post.id %>">
             <p><%= post.body %></p>
         </a>
@@ -26,9 +26,11 @@
     </div>
 </div>
 <script>
-    const likeButton = document.querySelector('like-button');
-    likeButton.addEventListener('click', (e) => {
-        const likes = post.likes
-        post.likes += likes + 1
-    });
+    const likeButton = document.querySelector('div.like-button');
+    const likeCount = document.querySelector('p.like-count');
+    likeButton.addEventListener('click', () => {
+        post.likes++;
+        likeCount.innerHTML = post.likes;
+        likeButton.disabled;
+    })
 </script>

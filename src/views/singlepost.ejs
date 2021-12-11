@@ -19,7 +19,7 @@
 <%- include('partials/footer.ejs') %>
 <script>
     const delreq = document.querySelector('a.delete');
-    delreq.addEventListener('click', (e) => {
+    delreq.addEventListener('click', () => {
         const endpoint = `/posts/${delreq.dataset.del}`;
         fetch(endpoint, {
             method: 'DELETE',
